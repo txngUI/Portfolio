@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function About({ theme }) {
   return (
@@ -44,8 +45,17 @@ function About({ theme }) {
           }}
         >
           Jeune développeur de 20 ans et étudiant en BUT Informatique à l’IUT de
-          Laval (53), je me passionne dans le développement web et mobile. Voir
-          mon parcours universitaire.
+          Laval (53), je me passionne dans le développement web et mobile.{" "}
+          <Link
+            to="/Parcours"
+            style={{
+              color:
+                theme === "light" ? "rgba(0,0,0,0.5)" : "rgba(255,255,255)",
+                textDecoration: "underline",
+            }}
+          >
+            Voir mon parcours universitaire.
+          </Link>
           <br />
           <br />
           Je conçois des solutions web en utilisant un large éventail de

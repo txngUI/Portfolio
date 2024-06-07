@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Button, Avatar } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function ProjectContainer({ theme, image, title, desc, icones = [] }) {
+function ProjectContainer({ theme, image, title, desc, icones = [], link }) {
   return (
     <div
       className="project-container"
@@ -56,6 +56,9 @@ function ProjectContainer({ theme, image, title, desc, icones = [] }) {
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Button
+            component="a"
+            href={link}
+            target="_blank"
             startIcon={<GitHubIcon />}
             sx={{
               backgroundColor: theme === "light" ? "white" : "#171717",
@@ -67,6 +70,7 @@ function ProjectContainer({ theme, image, title, desc, icones = [] }) {
               paddingRight: "20px",
               "&:hover": {
                 backgroundColor: theme === "light" ? "#EFE2E2" : "#0D0E11",
+                color: "#4F4F4F",
               },
             }}
           >

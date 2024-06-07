@@ -8,6 +8,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Amatic SC", sans-serif; /* Default font */
+}
+
+/* Light mode styles */
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --background-color: #0d0e11;
+  --text-color: #ffffff;
+}
+
+/* Apply the CSS variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 @font-face {
@@ -25,18 +44,6 @@ body {
 @font-face {
   font-family: "Sometype Mono SemiBold";
   src: url("./assets/fonts/SometypeMono-SemiBold.ttf") format("truetype");
-}
-
-body.light-mode {
-  background-color: white;
-  color: black;
-  place-items: baseline;
-}
-
-body.dark-mode {
-  background-color: #0d0e11;
-  color: white;
-  place-items: baseline;
 }
 
 .theme-toggle {
@@ -135,6 +142,39 @@ body.dark-mode {
   text-align: justify;
 }
 
+.hovered {
+  background-color: #242424 !important;
+  color: #4f4f4f !important;
+}
+
+.abilitie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.learning {
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  width: calc(100% / 3);
+}
+ 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .about {
     width: 80%;
@@ -154,6 +194,10 @@ body.dark-mode {
     font-family: Arial, sans-serif;
     font-size: 15px;
     text-align: justify;
+  }
+
+  .btn {
+    width: 60%;
   }
 }
 

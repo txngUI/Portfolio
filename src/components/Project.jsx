@@ -44,6 +44,7 @@ function Project({ theme }) {
           { src: react, alt: "React" },
           { src: vscode, alt: "VS Code" },
         ]}
+        link="https://github.com/txngUI/Portfolio"
       />{" "}
       <ProjectContainer
         theme={theme}
@@ -54,6 +55,7 @@ function Project({ theme }) {
           { src: react, alt: "React" },
           { src: vscode, alt: "VS Code" },
         ]}
+        link="https://github.com/txngUI/Pokedex"
       />
     </div>
   );
