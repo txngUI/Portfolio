@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 
 function Learning({
   name,
@@ -9,97 +9,215 @@ function Learning({
   traces,
   theme,
 }) {
+  const themeMUI = useTheme();
+  const isMobile = useMediaQuery(themeMUI.breakpoints.down("sm"));
+
   return (
     <div className="learning">
-      <Typography
-        variant="h6"
-        style={{
-          color:
-            theme === "light"
-              ? "rgba(0, 0, 0, 0.5)"
-              : "rgba(255, 255, 255, 0.5)",
-          fontSize: "25px",
-          fontFamily: "Sometype Mono",
-        }}
-      >
-        {name}
-      </Typography>
+      {isMobile ? (
+        <Typography
+          variant="h6"
+          style={{
+            color:
+              theme === "light"
+                ? "rgba(0, 0, 0, 0.5)"
+                : "rgba(255, 255, 255, 0.5)",
+            fontSize: "17px",
+            fontFamily: "Sometype Mono",
+            width: "100%",
+            marginBottom: "10px",
+          }}
+        >
+          {name}
+        </Typography>
+      ) : (
+        <Typography
+          variant="h6"
+          style={{
+            color:
+              theme === "light"
+                ? "rgba(0, 0, 0, 0.5)"
+                : "rgba(255, 255, 255, 0.5)",
+            fontSize: "25px",
+            fontFamily: "Sometype Mono",
+          }}
+        >
+          {name}
+        </Typography>
+      )}
 
-      <table
-        style={{ border: "solid 1px #868688", fontFamily: "Sometype Mono" }}
-      >
-        <thead>
-          <tr>
-            <th
+      {isMobile ? (
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <Typography
+            style={{
+              fontSize: "20px",
+              fontFamily: "Sometype Mono",
+              backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+              border: "solid 1px #868688",
+              padding: "10px",
+            }}
+          >
+            Acquis
+          </Typography>
+          {acquired.map((acq, index) => (
+            <Typography
+              key={index}
               style={{
-                border: "solid 1px #868688",
-                backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
-              }}
-            >
-              Acquis
-            </th>
-            <th
-              style={{
-                border: "solid 1px #868688",
-                backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
-              }}
-            >
-              En cours d'acquisition
-            </th>
-            <th
-              style={{
-                border: "solid 1px #868688",
-                backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
-              }}
-            >
-              Non acquis
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td
-              style={{
-                border: "solid 1px #868688",
+                fontFamily: "Sometype Mono",
                 backgroundColor:
                   theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                border: "solid 1px #868688",
+                padding: "10px",
+                fontSize: "12px",
               }}
             >
-              {acquired.map((acq, index) => (
-                <Typography key={index} style={{ fontFamily: "Sometype Mono" }}>
-                  &gt; {acq}{" "}
-                </Typography>
-              ))}
-            </td>
-            <td
+              &gt; {acq}
+            </Typography>
+          ))}
+
+          <Typography
+            style={{
+              fontSize: "20px",
+              fontFamily: "Sometype Mono",
+              backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+              border: "solid 1px #868688",
+              padding: "10px",
+              marginTop: "10px",
+            }}
+          >
+            En cours d'acquisition
+          </Typography>
+          {in_progress.map((acq, index) => (
+            <Typography
+              key={index}
               style={{
-                border: "solid 1px #868688",
+                fontFamily: "Sometype Mono",
                 backgroundColor:
                   theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                border: "solid 1px #868688",
+                padding: "10px",
+                fontSize: "12px",
               }}
             >
-              {in_progress.map((acq, index) => (
-                <Typography key={index} style={{ fontFamily: "Sometype Mono" }}>
-                  &gt; {acq}{" "}
-                </Typography>
-              ))}
-            </td>
-            <td
+              &gt; {acq}
+            </Typography>
+          ))}
+
+          <Typography
+            style={{
+              fontSize: "20px",
+              fontFamily: "Sometype Mono",
+              backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+              border: "solid 1px #868688",
+              padding: "10px",
+              marginTop: "10px",
+            }}
+          >
+            Non acquis
+          </Typography>
+          {not_acquired.map((acq, index) => (
+            <Typography
+              key={index}
               style={{
-                border: "solid 1px #868688",
+                fontFamily: "Sometype Mono",
                 backgroundColor:
                   theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                border: "solid 1px #868688",
+                padding: "10px",
+                fontSize: "12px",
               }}
             >
-              {not_acquired.map((acq, index) => (
-                <Typography key={index} style={{ fontFamily: "Sometype Mono" }}>
-                  &gt; {acq}{" "}
-                </Typography>
-              ))}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              &gt; {acq}
+            </Typography>
+          ))}
+        </div>
+      ) : (
+        <table
+          style={{ border: "solid 1px #868688", fontFamily: "Sometype Mono" }}
+        >
+          <thead>
+            <tr>
+              <th
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+                }}
+              >
+                Acquis
+              </th>
+              <th
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+                }}
+              >
+                En cours d'acquisition
+              </th>
+              <th
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor: theme === "light" ? "#D2CECE" : "#252527",
+                }}
+              >
+                Non acquis
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor:
+                    theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                }}
+              >
+                {acquired.map((acq, index) => (
+                  <Typography
+                    key={index}
+                    style={{ fontFamily: "Sometype Mono" }}
+                  >
+                    &gt; {acq}{" "}
+                  </Typography>
+                ))}
+              </td>
+              <td
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor:
+                    theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                }}
+              >
+                {in_progress.map((acq, index) => (
+                  <Typography
+                    key={index}
+                    style={{ fontFamily: "Sometype Mono" }}
+                  >
+                    &gt; {acq}{" "}
+                  </Typography>
+                ))}
+              </td>
+              <td
+                style={{
+                  border: "solid 1px #868688",
+                  backgroundColor:
+                    theme === "light" ? "#EEEBEB" : "rgb(37, 37, 39, 0.34)",
+                }}
+              >
+                {not_acquired.map((acq, index) => (
+                  <Typography
+                    key={index}
+                    style={{ fontFamily: "Sometype Mono" }}
+                  >
+                    &gt; {acq}{" "}
+                  </Typography>
+                ))}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      )}
+
       {traces.length > 0 && (
         <>
           <Typography

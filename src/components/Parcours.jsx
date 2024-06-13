@@ -15,12 +15,12 @@ const Parcours = ({ theme, toggleTheme }) => {
     { name: "Année 1", component: <YearOne theme={theme} /> },
     { name: "Année 2", component: <YearTwo theme={theme} /> },
     { name: "Année 3", component: <YearThree theme={theme} /> },
-    { name: "Profil Professionnel", component: <Profile theme={theme} /> },
+    { name: "Profil", component: <Profile theme={theme} /> },
   ];
 
   const buttonStyle = {
     backgroundColor: theme === "light" ? "#EEEBEB" : "#1C1C1C",
-    color: "#4F4F4F",
+    color: theme === "light" ? "rgb(0,0,0,0.5)" : "#4F4F4F",
     textTransform: "none",
     display: "flex",
     alignItems: "center",
@@ -40,6 +40,7 @@ const Parcours = ({ theme, toggleTheme }) => {
       className="parcours"
       style={{
         width: "90vw",
+        marginTop: "50px",
       }}
     >
       <button
@@ -63,14 +64,13 @@ const Parcours = ({ theme, toggleTheme }) => {
       >
         <Typography
           variant="h4"
+          className="parcours-title"
           style={{
             fontFamily: "Amatic SC",
             fontSize: "60px",
             textAlign: "center",
-            backgroundColor: theme === "light" ? "#EEEBEB" : "#1C1C1C",
-            borderRadius: "80%",
-            padding: "30px",
             width: "50%",
+            marginBottom: "20px",
           }}
         >
           PORTFOLIO UNIVERSITAIRE
@@ -80,11 +80,10 @@ const Parcours = ({ theme, toggleTheme }) => {
         to="/"
         style={{
           color: theme === "light" ? "rgba(0,0,0,0.5)" : "rgba(255,255,255)",
-          textDecoration: "underline",
           fontFamily: "Sometype Mono",
         }}
       >
-        Retour à l'accueil
+        &lt; Retour à l'accueil
       </Link>
       <div
         style={{
@@ -99,13 +98,13 @@ const Parcours = ({ theme, toggleTheme }) => {
         {pages.map((page, index) =>
           currentPage === page.name ? (
             <Button
+              className="btn-year"
               key={index}
               style={{
                 ...buttonStyle,
                 backgroundColor: theme === "light" ? "#EEEBEB" : "#1C1C1C",
-                color: "#4F4F4F",
                 height: "60px",
-                width: "200px",
+                width: "300px",
               }}
               onClick={() => setCurrentPage(page.name)}
             >
@@ -113,6 +112,7 @@ const Parcours = ({ theme, toggleTheme }) => {
             </Button>
           ) : (
             <Button
+              className="btn-year"
               key={index}
               style={buttonStyle}
               onClick={() => setCurrentPage(page.name)}
@@ -126,17 +126,6 @@ const Parcours = ({ theme, toggleTheme }) => {
       <div style={{ marginTop: "20px" }}>
         {pages.find((page) => page.name === currentPage)?.component}
       </div>
-      <Typography
-        style={{
-          width: "100%",
-          textAlign: "center",
-          color: "#9D9999",
-          paddingTop: "75px",
-          paddingBottom: "20px",
-        }}
-      >
-        © 2024 by Tanguy DAVID. All rights reserved.
-      </Typography>
     </div>
   );
 };

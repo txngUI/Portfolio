@@ -520,9 +520,9 @@ function YearOne({ theme }) {
           in_progress: [],
           traces: [
             {
-              name: "",
+              name: "Actualités",
               desc: [
-                "Le journaliste Hugo Décrypte, présent sur les réseaux sociaux (Instagram, YouTube, Tik Tok), propose différents formats tel que des formats de 2 minutes présentant les nouvelles chaque jour. J’ai donc regardé et écouté ces formats tous les jours afin de m’informer. Lien: https://www.tiktok.com/@hugodecrypte?lang=fr",
+                "Le journaliste Hugo Décrypte, présent sur les réseaux sociaux (Instagram, YouTube, Tik Tok), propose différents formats tel que des formats de 2 minutes présentant les nouvelles chaque jour. J’ai donc regardé et écouté ces formats tous les jours afin de m’informer.",
                 "Rubriques actualités de Google proposées directement sur le téléphone qui informe des actualités par rapport à vos préférences.",
               ],
             },
@@ -542,7 +542,7 @@ function YearOne({ theme }) {
           ],
           traces: [
             {
-              name: "",
+              name: "Langue Vivante Anglaise",
               desc: [
                 "Duolingo : Cours de 20 minutes tous les jours. Travail l’anglais écrit et oral.",
                 "Netflix : Regarder les séries et films en anglais sous-titrés pour s’améliorer à la compréhension orale qui est une de mes grandes lacunes.",
@@ -563,7 +563,7 @@ function YearOne({ theme }) {
           ],
           traces: [
             {
-              name: "",
+              name: "Culture cinématographique",
               desc: [
                 "Le journal Hugo Décrypte fait aussi des formats vidéos mettant en avant des personnes connues tels que des acteurs à l’occasion du festival de Cannes.",
                 "Aller voir le programme du cinéma toutes les semaines pour voir les nouveautés et aller voir les plus intéressants/ les classiques/ les plus connus.",
@@ -588,10 +588,11 @@ function YearOne({ theme }) {
   };
 
   return (
-    <div style={{ marginTop: "50px"}}>
+    <div style={{ marginTop: "50px" }}>
       {abilities.map((ability, index) => (
         <div style={{ marginTop: "10px", marginBottom: "10px" }} key={index}>
           <button
+            className="btn-abilite"
             onClick={() => toggleExpand(index)}
             style={{
               fontSize: "25px",

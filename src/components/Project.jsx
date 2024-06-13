@@ -34,6 +34,7 @@ function Project({ theme }) {
           { src: androidStudioImage, alt: "Android Studio" },
         ]}
         link="https://github.com/txngUI/ChampsEtCie"
+        year="2024"
       />
       <ProjectContainer
         theme={theme}
@@ -45,6 +46,7 @@ function Project({ theme }) {
           { src: vscode, alt: "VS Code" },
         ]}
         link="https://github.com/txngUI/Portfolio"
+        year="2024"
       />{" "}
       <ProjectContainer
         theme={theme}
@@ -56,6 +58,7 @@ function Project({ theme }) {
           { src: vscode, alt: "VS Code" },
         ]}
         link="https://github.com/txngUI/Pokedex"
+        year="2024"
       />
     </div>
   );

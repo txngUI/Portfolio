@@ -43,6 +43,10 @@ function YearTwo({ theme }) {
               name: "Alternance",
               desc: ["mise en place d’une enquête de satisfaction"],
             },
+            {
+              name: "Application android",
+              desc: ["conception d’une interface ergonomique"],
+            },
           ],
         },
         {
@@ -53,7 +57,10 @@ function YearTwo({ theme }) {
             "Réalisation de revues de code régulières.",
           ],
           not_acquired: [],
-          in_progress: ["Implémentation de tests unitaires et d'intégration."],
+          in_progress: [
+            "Implémentation de tests unitaires et d'intégration.",
+            "Utiliser un modèle MVC.",
+          ],
           traces: [
             {
               name: "R4.02 : Qualité Dév Tests",
@@ -62,6 +69,18 @@ function YearTwo({ theme }) {
             {
               name: "R3.04 : Qualité de Dév",
               desc: ["SOLID avec POO"],
+            },
+            {
+              name: "Application android",
+              desc: ["test unitaires et standards de codage"],
+            },
+            {
+              name: "Game Collection",
+              desc: [" utiliser le modèle MVC"],
+            },
+            {
+              name: "Alternance",
+              desc: ["utiliser le modèle MVC"],
             },
           ],
         },
@@ -83,6 +102,12 @@ function YearTwo({ theme }) {
                 "Apprendre les différents designs patterns",
               ],
             },
+            {
+              name: "Application android",
+              desc: [
+                "utilisation de design patterns (MVC, Singleton, Observer, etc.)",
+              ],
+            },
           ],
         },
         {
@@ -101,6 +126,10 @@ function YearTwo({ theme }) {
                 "Développer un site e-commerce avec Symphony en reprenant un début de projet déjà réalisé.",
               ],
             },
+            {
+              name: "Application android",
+              desc: ["utilisation d’API Rest"],
+            },
           ],
         },
         {
@@ -111,7 +140,9 @@ function YearTwo({ theme }) {
             "Réalisation de tests de performance et de sécurité.",
           ],
           not_acquired: [],
-          in_progress: ["Analyse des résultats de tests et correction des bugs."],
+          in_progress: [
+            "Analyse des résultats de tests et correction des bugs.",
+          ],
           traces: [
             {
               name: "R4.02 : Qualité Dév Tests",
@@ -122,78 +153,119 @@ function YearTwo({ theme }) {
           ],
         },
       ],
-      sources: [],
+      sources: [
+        {
+          title: "Projet Game Collection",
+          url: "https://github.com/txngUI/game_collection",
+          desc: "Réalisation d'une application de gestion de collection de jeux vidéos en utilisant les principes SOLID et les designs patterns pour faciliter l'ajout de nouvelles fonctionnalités et la maintenance du code.",
+        },
+        {
+          title: "Site E-commerce Symphony",
+          url: "https://github.com/txngUI/e-commerce-website",
+          desc: "Développement d'un site e-commerce en utilisant le framework Symphony et en reprenant un début de projet déjà réalisé pour s'adapter au contexte applicatif et comprendre la logique du code existant.",
+        },
+        {
+          title: "Application android",
+          url: "https://github.com/txngUI/ChampsEtCie",
+          desc: "Réalisation d'une application android en utilisant des tests unitaires, d'intégration et fonctionnels pour vérifier et valider la qualité de l'application.",
+        },
+      ],
     },
     {
       abilitie: "Compétence 2 : Optimiser des applications",
       critical_learning: [
         {
-          name: "Apprentissage Critique 1 : Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données)",
+          name: "Apprentissage Critique 1 : Choisir des structures de données complexes adaptées au problème",
           acquired: [
-            "Les différentes structures de données sont comprises ",
-            "La solution est méthodique",
+            "Connaissance des structures de données avancées (arbres, graphes, tables de hachage, etc.).",
+            "Mise en œuvre correcte des structures de données choisies.",
           ],
           not_acquired: [],
           in_progress: [
-            "Les différents tris sont bien implémenté mais leurs coût d’optimisation est mal comrpis",
+            "Capacité à analyser les besoins en termes de performance et de complexité.",
+            "Utilisation efficace des structures pour résoudre des problèmes complexes.",
           ],
           traces: [
             {
-              name: "TP Java",
+              name: "R3.02 : Développement Efficace",
               desc: [
-                "Implémentation et conception d’une calculatrice et d’un jeu de cartes pour utiliser et comprendre les structures de données Pile et File respectivement sous modèle LIFO et FIFO.",
+                "Optimisation et analyse des performance et de la complexité",
               ],
             },
             {
-              name: "SAE 1.02",
+              name: "R3.09 : Cryptographie et sécurité",
+              desc: ["Table de hachage"],
+            },
+          ],
+        },
+        {
+          name: "Apprentissage Critique 2 : Utiliser des techniques algorithmiques adaptées pour des problèmes complexes (par ex. recherche opérationnelle, méthodes arborescentes, optimisation globale, intelligence artificielle...) ",
+          acquired: [
+            "Capacité à choisir l'algorithme le plus adapté au problème donné.",
+            "Implémentation correcte et optimisation des algorithmes choisis.",
+          ],
+          not_acquired: [],
+          in_progress: [],
+          traces: [
+            {
+              name: "R3.02 : Développement efficace",
               desc: [
-                "Implémentation des algorithmes de tris, de recherche et de structures de données selon un besoin concret, une filmothèque.",
+                "Optimisation et choix de l’implémentation de l'algorithme",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 2 : Comparer des algorithmes pour des problèmes classiques (tris simples, recherche…)",
+          name: "Apprentissage Critique 3 : Appréhender la différence entre les paradigmes de programmation",
           acquired: [
-            "Les algorithmes sont fonctionnels et optimisés",
-            "L’analyse des algorithmes sont pertinents et corrects",
-            "Le programme est bien expliqué et les résultats interprétés.",
+            "Connaissance des principaux paradigmes de programmation et de leurs caractéristiques.",
+            "Utilisation correcte et efficace du paradigme choisi dans le développement.",
+            "Capacité à passer d’un paradigme à un autre selon les besoins du projet.",
           ],
           not_acquired: [],
-          in_progress: ["Le coût est optimisé mais mal compris"],
+          in_progress: [
+            "Capacité à identifier le paradigme le plus adapté à un problème donné.",
+          ],
           traces: [
             {
-              name: "SAE 1.02",
-              desc: [
-                "Comparaison et analyse des algorithmes de tris et de recherches selon un besoin concret, une filmothèque.",
-              ],
+              name: "R3.04 : Qualité de Développement",
+              desc: ["Apprentissage des différents paradigmes"],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 3 : Formaliser et mettre en œuvre des outils mathématiques pour l’informatique.",
+          name: "Apprentissage Critique 4 : Comprendre les enjeux et moyens de sécurisation des données et du code",
           acquired: [
-            "L'utilisation des algorithmes BFS et A* est maitrisé et permettent au programme d'être optimisé",
-            "Les statistiques analyse les résultats des tests et sont pertinents",
+            "Connaissance des principes de sécurité informatique (cryptographie, authentification, autorisation).",
+            "Implémentation de mesures de sécurité appropriées (chiffrement, gestion des accès, etc.).",
           ],
           not_acquired: [],
           in_progress: [
-            "Des bibliothèques mathématiques sont utilisées pour optimiser le programme",
+            "Réalisation de tests de sécurité et correction des vulnérabilités.",
           ],
           traces: [
             {
-              name: "SAE 1.02 ",
-              desc: [
-                "Compte rendu des résultats des comparaisons d’algorithmes de tris et de recherches avec une analyse approfondie à l’aide de diagramme.",
-              ],
+              name: "R3.09 : Cryptographie et sécurité",
+              desc: ["Sécurité"],
             },
             {
-              name: "SAE 2.02",
-              desc: [
-                "Utilisation de la théorie des Graphes et des algorithmes permettant de calculer le plus court chemin BFS et A* afin de répondre à un problème de résolution de Donjons.",
-              ],
+              name: "R4.02 : Qualité Dév Tests",
+              desc: ["Implémentation de tests"],
             },
           ],
+        },
+        {
+          name: "Apprentissage Critique 5 : Évaluer l’impact environnemental et sociétal des solutions proposées",
+          acquired: [
+            "Connaissance des impacts environnementaux et sociétaux liés à l'informatique (consommation énergétique, recyclage, etc.).",
+            "Prise en compte de ces impacts dans le processus de développement (choix technologiques, optimisation des ressources).",
+          ],
+          not_acquired: [],
+          in_progress: [
+            "Utilisation d'outils et de méthodes pour évaluer et réduire l’empreinte écologique des applications.",
+            "Promotion des pratiques durables et éthiques dans le développement informatique.",
+          ],
+          traces: [],
         },
       ],
       sources: [
@@ -216,151 +288,173 @@ function YearTwo({ theme }) {
     },
     {
       abilitie:
-        "Compétence 3 : Administrer des systèmes informatiques communicants complexes",
+        "Compétence 3 : Administrer des systèmes informatiques communicants complexes ",
       critical_learning: [
         {
-          name: "Apprentissage Critique 1 : Identifier les différents composants (matériels et logiciels) d’un système numérique",
+          name: "Apprentissage Critique 1 : Concevoir et développer des applications communicantes",
           acquired: [
-            "Capable d’associer une fonction/un rôle au composant d’un système numérique qu’il a identifié",
-            "Capable de placer ses composants dans un système numérique",
+            "Connaissance des protocoles de communication (HTTP, WebSocket, etc.).",
+            "Développement d’API RESTful ou de services web.",
+            "Implémentation de mécanismes de communication en temps réel.",
           ],
           not_acquired: [],
           in_progress: [
-            "Connais les avantages et les inconvénients de chaques composants ",
+            "Capacité à déboguer et résoudre des problèmes de communication entre applications.",
           ],
           traces: [
             {
-              name: "Anglais Technique",
+              name: "Projet android",
               desc: [
-                "Documents écrits + audio + différents exercices afin de comprendre les différents composants d’un système numérique, leurs fonctions, leurs unités / mesures, leurs importances, leurs rôles",
-              ],
-            },
-            {
-              name: "SAE 1.03",
-              desc: [
-                "Oral noté sur notre manière de mettre en place un système numérique",
+                "utilisation d’une API Rest pour communiquer avec une base de données",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 2 : Utiliser les fonctionnalités de base d’un système multi tâches / multi utilisateurs",
+          name: "Apprentissage Critique 2 : Utiliser des serveurs et des services réseaux virtualisés",
           acquired: [
-            "Capable d’attribuer des autorisations.",
-            "Capable de créer plusieurs comptes utilisateurs.",
+            "Déploiement d’applications sur des serveurs virtuels.",
+            "Utilisation de Virtualbox",
           ],
           not_acquired: [],
-          in_progress: [
-            "Capable de présenter les principes de bases d’un système multi tâches / multi utilisateurs.",
-          ],
+          in_progress: ["Configuration et gestion de réseaux virtuels."],
           traces: [
             {
-              name: "SAE 1.03",
+              name: "R4.A.08 Virtualisation",
               desc: [
-                "Savoir utiliser des commandes dans le terminal sur une virtual machine sous Linux (Ubuntu) afin de naviguer entre les différents utilisateurs.",
+                "TP Virtual Machine : réaliser un système asker, brainer et memory",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 3 : Installer et configurer un système d’exploitation et des outils de développement",
+          name: "Apprentissage Critique 3 : Sécuriser les services et données d’un système ",
           acquired: [
-            "Les outils de développement sont utilisable",
-            "Capable de naviguer dans le système d’exploitation",
+            "Utilisation de techniques de chiffrement des données.",
+            "Implémentation de mécanismes d’authentification et d’autorisation.",
           ],
           not_acquired: [],
-          in_progress: [],
+          in_progress: [
+            "Réalisation de tests de sécurité et mise en place de correctifs.",
+          ],
           traces: [
             {
-              name: "SAE 1.03",
+              name: "R3.09 Cryptographie et sécurité",
               desc: [
-                "Installation d’une Machine Virtuelle d’un système d’exploitation Linux et sa configuration par des installations de logiciel tel que VS Code par des commandes dans le terminal Linux.",
+                "TP Cryptologie : réaliser un chiffrement et déchiffrement de message",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 4 : Configurer un poste de travail dans un réseau d’entreprise",
-          acquired: ["Etablir les droits du poste de travail"],
+          name: "Apprentissage Critique 4 : Rédiger une documentation technique (en français et en anglais) ",
+          acquired: [
+            "Rédaction de guides d’utilisation et de manuels techniques.",
+            "Documentation des API et des interfaces.",
+          ],
           not_acquired: [],
           in_progress: [
-            "Exécuter les logiciels à partir du terminal",
-            "Capable d’établir des alias pour les commandes",
+            "Utilisation de formats standards pour la documentation (Markdown, Javadoc, etc.).",
+            "Capacité à rédiger dans un langage technique précis et compréhensible.",
           ],
           traces: [
             {
-              name: "SAE 1.03",
-              desc: [
-                "Appréhender l’environnement linux et terminal afin de configurer un poste de travail. ",
-              ],
+              name: "Qualité de développement ",
+              desc: ["documenter un projet "],
+            },
+            {
+              name: "Anglais entreprise ",
+              desc: ["rédiger des documents techniques en anglais"],
             },
           ],
         },
       ],
-      sources: [],
+      sources: [
+        {
+          title: "Application android",
+          url: "https://github.com/txngUI/ChampsEtCie",
+          desc: "Réalisation d'une application android en utilisant des tests unitaires, d'intégration et fonctionnels pour vérifier et valider la qualité de l'application.",
+        },
+      ],
     },
     {
       abilitie: "Compétence 4 : Gérer des données de l’information",
       critical_learning: [
         {
-          name: "Apprentissage Critique 1 : Mettre à jour et interroger une base de donnée relationnelle (en requête ou à travers une application)",
+          name: "Apprentissage Critique 1 : Optimiser les modèles de données de l’entreprise",
           acquired: [
-            "Capable d’interroger une base de données",
-            "Capable de mettre à jour, supprimer ou ajouter une donnée à la base de données",
-            "Sait utiliser MySQL",
+            "Conception de schémas de bases de données relationnelles et non relationnelles (MongoDB)",
+            "Normalisation des bases de données pour éliminer les redondances et incohérences.",
           ],
           not_acquired: [],
-          in_progress: ["Sais utiliser SQL Server"],
+          in_progress: [
+            "Utilisation de techniques d'indexation et de partitionnement.",
+            "Optimisation des requêtes SQL pour améliorer la performance.",
+          ],
           traces: [
             {
-              name: "SAE 1.04",
+              name: "R3.07 SQL dans un langage de programmation",
               desc: [
-                "Création d’une fausse base de données Netflix (entreprise choisie par notre groupe) afin de pouvoir écrire des requêtes et répondre à des commandes tel que des filtres, des sélections selon les films, etc...",
-              ],
-            },
-            {
-              name: "SAE 2.03",
-              desc: [
-                "Création d’une application Java FX utilisant un JDBC afin d’interagir avec la base de données via directement une interface, donc sans requêtes. Les requêtes sont dans le code.",
+                "Utilisation de techniques d'indexation et de partitionnement.",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 2 : Visualiser des données",
+          name: "Apprentissage Critique 2 : Assurer la confidentialité des données (intégrité et sécurité) ",
           acquired: [
-            "Réaliser des Dictionnaires de Données, Dépendances Fonctionnelle et son graphe, Modèles Conceptuels de données.",
+            "Implémentation de contrôles d'accès et de permissions.",
+            "Utilisation de techniques de chiffrement des données en transit et au repos.",
+            "Réalisation d’audits de sécurité et mise en place de stratégies de sauvegarde.",
           ],
           not_acquired: [],
-          in_progress: ["Fais des erreurs de syntaxes"],
+          in_progress: [
+            "Application des politiques de gestion des données sensibles et de conformité (RGPD).",
+          ],
           traces: [
             {
-              name: "SAE 2.05",
-              desc: [
-                "Création d’un cahier des charges d’un logiciel de gestion de tâches pour une entreprise où l’on créer leur Base de Données (à l’aide du logiciel Looping).",
-              ],
+              name: "Droit des contrats et du numérique",
+              desc: ["Droits RGPD et CNIL"],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 3 : Concevoir une base de données relationnelle à partir d’un cahier des charges.",
+          name: "Apprentissage Critique 3 : Organiser la restitution de données à travers la programmation et la visualisation ",
           acquired: [
-            "La base de données est pertinente et fonctionnelle.",
-            "Des commentaires pertinents sont indiqués",
+            "Utilisation de langages de programmation pour manipuler et analyser les données (Python, Java, SQL).",
+            "Développement de tableaux de bord et de rapports interactifs (Tableau, Power BI).",
+            "Création de visualisations de données (graphiques, cartes, diagrammes).",
           ],
           not_acquired: [],
-          in_progress: [],
+          in_progress: [
+            "Capacité à interpréter et expliquer les résultats obtenus.",
+          ],
           traces: [
             {
-              name: "SAE 1.04 ",
-              desc: [
-                "Création d’une fausse base de données Netflix (entreprise choisie par notre groupe) afin de pouvoir écrire des requêtes et répondre à des commandes tel que des filtres, des sélections selon les films, etc...",
-              ],
+              name: "Alternance",
+              desc: ["Formation à Power BI"],
             },
             {
-              name: "SAE 2.03 ",
+              name: "R3.07 SQL dans un langage de programmation",
+              desc: ["Partie programmation du langage SQL"],
+            },
+          ],
+        },
+        {
+          name: "Apprentissage Critique 4 : Manipuler des données hétérogènes",
+          acquired: [
+            "Utilisation d’outils et de langages pour manipuler des données hétérogènes (JSON, XML, CSV, etc.).",
+          ],
+          not_acquired: [],
+          in_progress: [
+            "Capacité à extraire, transformer et charger (ETL) des données de différentes sources.",
+          ],
+          traces: [
+            {
+              name: "Projet android",
               desc: [
-                "Création d’une application Java FX utilisant un JDBC afin d’interagir avec la base de données via directement une interface, donc sans requêtes. Les requêtes sont dans le code",
+                "Manipuler des données JSON avec l’api",
+                "utilisation de xml pour créer le pattern",
               ],
             },
           ],
@@ -368,19 +462,9 @@ function YearTwo({ theme }) {
       ],
       sources: [
         {
-          title: "SAE 1.04 : Base de données Netflix",
-          url: "https://www.mediafire.com/folder/4b2k0uqpwdp8g/SAE+1.04",
-          desc: "Réalisation d'une base de données et ses visuels de l’application Netflix.",
-        },
-        {
-          title: "Cahier des Charges",
-          url: "https://docs.google.com/document/d/1VqXcn_AJqbqxXlhRfYWskVzxp06KnunuFcm1p5-VWGk/edit?usp=sharing",
-          desc: "",
-        },
-        {
-          title: "Dossier des Spécifications",
-          url: "https://docs.google.com/document/u/1/d/19NKswWsRCs3gmItX-uqe_KBX9jbeY3NzeGn-Rr2aNCA/edit?usp=sharing",
-          desc: "",
+          title: "Application android",
+          url: "https://github.com/txngUI/ChampsEtCie",
+          desc: "Réalisation d'une application android en utilisant des tests unitaires, d'intégration et fonctionnels pour vérifier et valider la qualité de l'application.",
         },
       ],
     },
@@ -388,79 +472,92 @@ function YearTwo({ theme }) {
       abilitie: "Compétence 5 : Conduire un projet",
       critical_learning: [
         {
-          name: "Apprentissage Critique 1 : Appréhender les besoins du client et de l’utilisateur",
+          name: "Apprentissage Critique 1 : Lancer un nouveau projet",
           acquired: [
-            "Le Cahier des Charges est complet",
-            "Le Dossier de Spécifications est complet",
+            "Élaboration d'un planning initial et définition des jalons clés.",
+            "Identification et évaluation des risques potentiels.",
+            "Établissement du budget prévisionnel.",
+            "Utilisation d'outils de gestion de projet (MS Project, Trello, Asana).",
           ],
           not_acquired: [],
           in_progress: [
-            "La communication entre les acteurs du projet est correcte mais pas parfait",
+            "Identification des parties prenantes et constitution de l'équipe projet.",
           ],
           traces: [
             {
-              name: "SAE 2.06",
+              name: "Alternance",
+              desc: ["utilisation de Trello"],
+            },
+          ],
+        },
+        {
+          name: "Apprentissage Critique 2 : Piloter le maintien d’un projet en condition opérationnelle",
+          acquired: [
+            "Suivi régulier de l'avancement du projet par rapport au planning.",
+            "Gestion des ressources et allocation des tâches.",
+            "Mise en place de points de contrôle et de revues de projet",
+          ],
+          not_acquired: [],
+          in_progress: [
+            "Communication régulière avec les parties prenantes.",
+            "Résolution des problèmes et gestion des risques.",
+          ],
+          traces: [
+            {
+              name: "R4.1.09 Management avancé des systèmes d'exploitation",
               desc: [
-                "Comprendre les besoins du client (entreprise fictive) et élaborer un cahier des charges en fonction des contraintes.",
+                "Mise en place d’un ERP selon les différents services possibles d’une entreprise",
               ],
             },
           ],
         },
         {
-          name: "Apprentissage Critique 2 : Mettre en place les outils de gestion de projet",
+          name: "Apprentissage Critique 3 : Faire évoluer un système d’information ",
           acquired: [
-            "Capable d’élaborer un GANT",
-            "Capable d’élaborer un PERT",
-            "Capable d’anticiper les risques par un diagramme d’ISHIKAWA",
+            "Analyse des besoins et identification des améliorations à apporter.",
+            "Utilisation de méthodes agiles pour intégrer les évolutions (Scrum, Kanban).",
           ],
           not_acquired: [],
           in_progress: [],
           traces: [
             {
-              name: "SAE 2.06",
-              desc: [
-                "Comprendre les besoins du client (entreprise fictive) et élaborer un cahier des charges en fonction des contraintes.",
-              ],
+              name: "R3.10 Management des systèmes d'information",
+              desc: ["Mise en place des méthodes agiles, scrum, kanban"],
             },
           ],
         },
-        {
-          name: "Apprentissage Critique 3 : Identifier les acteurs et les différentes phases d’un cycle de développement",
-          acquired: ["Capable d’élaborer un cycle de développement complet"],
-          not_acquired: [],
-          in_progress: [
-            "Capable d’identifier les acteurs",
-            "Capable d’identifier les différentes phases",
-          ],
-          traces: [],
-        },
       ],
-      sources: [
-        {
-          title: "Cahier des Charges",
-          url: "https://docs.google.com/document/d/1VqXcn_AJqbqxXlhRfYWskVzxp06KnunuFcm1p5-VWGk/edit?usp=sharing",
-          desc: "",
-        },
-      ],
+      sources: [],
     },
     {
       abilitie: "Compétence 6 : Collaborer au sein d’une équipe informatique",
       critical_learning: [
         {
-          name: "Apprentissage Critique 1 : Appréhender l’écosystème numérique",
+          name: "Apprentissage Critique 1 : Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation (ESN, DSI,…) ",
           acquired: [
-            "Capable d’identifier les rôles et les fonctions d’une équipe informatique",
+            "Connaissance des différentes structures organisationnelles (ESN, DSI, startups, grandes entreprises).",
+            "Capacité à identifier les interactions entre les équipes informatiques et les autres départements.",
+            "Familiarité avec les différents processus et méthodologies utilisés dans ces structures (ITIL, DevOps, Agile).",
           ],
           not_acquired: [],
           in_progress: [
-            "Capable d’exploiter une équipe de manière efficace et pertinente.",
+            "Compréhension des rôles et responsabilités des différentes équipes informatiques.",
           ],
-          traces: [],
+          traces: [
+            {
+              name: "R4.1.09 Management avancé des systèmes d'exploitation",
+              desc: [
+                " Réalisation d’un ERP sous méthode AGILE en identifiant les différents rôles d’une équipe informatique",
+              ],
+            },
+          ],
         },
         {
-          name: "Apprentissage Critique 2 : Découvrir les aptitudes requises selon les différents secteurs informatiques",
+          name: "Apprentissage Critique 2 : Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation ",
           acquired: [
-            "Capable de lier les aptitudes requises en fonction des différents secteurs informatiques",
+            "Capacité à comprendre rapidement les outils, technologies et méthodologies utilisés par l'équipe.",
+            "Participation active aux réunions et aux sessions de formation.",
+            "Mise en place de relations de travail positives avec les membres de l'équipe.",
           ],
           not_acquired: [],
           in_progress: [
@@ -469,40 +566,70 @@ function YearTwo({ theme }) {
           traces: [],
         },
         {
-          name: "Apprentissage Critique 3 : Identifier les statuts, les fonctions et les rôles de chaque membres d’une équipe pluridisciplinaire",
+          name: "Apprentissage Critique 3 : Mobiliser les compétences interpersonnelles pour travailler dans une équipe informatique",
           acquired: [
-            "L’équipe est bien répartie selon leurs fonctions, les statuts et les rôles selon leurs compétences.",
+            "Capacité à communiquer clairement et efficacement avec les membres de l'équipe.",
+            "Capacité à donner et à recevoir des feedbacks constructifs.",
+            "Mise en œuvre de méthodes agiles (Scrum, Kanban) pour améliorer la collaboration et la productivité de l'équipe.",
           ],
           not_acquired: [],
-          in_progress: ["Mauvaise estimation de ses compétences"],
+          in_progress: [
+            "Participation active aux réunions de l'équipe et aux sessions de brainstorming.",
+          ],
           traces: [],
         },
         {
-          name: "Apprentissage Critique 4 : Acquérir les compétences interpersonnelles pour travailler en équipe",
+          name: "Apprentissage Critique 4 : Rendre compte de son activité professionnelle",
           acquired: [
-            "Les travaux sont aboutis",
-            "L’équipe décide d’un commun accord",
+            "Rédaction de rapports d'avancement et de bilans de projet.",
+            "Capacité à utiliser des outils de suivi et de gestion de projet pour documenter les tâches et les progrès.",
+            "Présentation régulière de l'avancement du travail lors des réunions d'équipe.",
           ],
           not_acquired: [],
-          in_progress: ["Le projet est mal organisé"],
+          in_progress: [],
           traces: [],
         },
       ],
-      sources: [
-        {
-          title: "Cahier des Charges",
-          url: "https://docs.google.com/document/d/1VqXcn_AJqbqxXlhRfYWskVzxp06KnunuFcm1p5-VWGk/edit?usp=sharing",
-          desc: "",
-        },
-      ],
+      sources: [],
     },
     {
       abilitie: "Compétence 7 : Culture Générale",
       critical_learning: [
         {
-          name: "Actualités",
+          name: "Géographie",
+          acquired: ["Situes tout les départements de France"],
+          not_acquired: [],
+          in_progress: ["Connaître les vins des régions de France"],
+          traces: [
+            {
+              name: "",
+              desc: [
+                "Géoguessr : Jeu en ligne qui permet de découvrir des lieux du monde entier et de tester ses connaissances en géographie.",
+                "Carte des vins de France ",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Langues Vivantes",
+          acquired: ["Lire un livre en anglais"],
+          not_acquired: [],
+          in_progress: ["Apprendre l'espagnol", "apprendre l'allemand"],
+          traces: [
+            {
+              name: "",
+              desc: [
+                "Duolingo : Cours de 20 minutes tous les jours. Travail l’anglais, espagnol et allemand écrit et oral.",
+                "Lire Alice au Pays des Merveilles en anglais.",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Politique",
           acquired: [
-            "Peut converser aisément sur quelques actualités telles que le Festival de Cannes, les récents Films, les polémiques, etc...",
+            "Connais les différents partis politiques français",
+            "Connais les programmes des différents parties politiques",
           ],
           not_acquired: [],
           in_progress: [],
@@ -510,52 +637,8 @@ function YearTwo({ theme }) {
             {
               name: "",
               desc: [
-                "Le journaliste Hugo Décrypte, présent sur les réseaux sociaux (Instagram, YouTube, Tik Tok), propose différents formats tel que des formats de 2 minutes présentant les nouvelles chaque jour. J’ai donc regardé et écouté ces formats tous les jours afin de m’informer. Lien: https://www.tiktok.com/@hugodecrypte?lang=fr",
-                "Rubriques actualités de Google proposées directement sur le téléphone qui informe des actualités par rapport à vos préférences.",
-              ],
-            },
-          ],
-        },
-        {
-          name: "Langue Vivante Anglaise",
-          acquired: [
-            "Peut converser en anglais",
-            "Capable de construire des phrases complexes",
-            "Comprendre l’écrit",
-          ],
-          not_acquired: [],
-          in_progress: [
-            "Peut résumer une brève écoute orale ",
-            "Ecoute et regarde une série ou un film avec sous titres",
-          ],
-          traces: [
-            {
-              name: "",
-              desc: [
-                "Duolingo : Cours de 20 minutes tous les jours. Travail l’anglais écrit et oral.",
-                "Netflix : Regarder les séries et films en anglais sous-titrés pour s’améliorer à la compréhension orale qui est une de mes grandes lacunes.",
-              ],
-            },
-          ],
-        },
-        {
-          name: "Culture cinématographique",
-          acquired: [
-            "Connais les films de l’années et les classiques",
-            "Capable de reconnaître des stars du cinéma",
-            "Capable de donner un avis constructif sur une large plage de films connus",
-          ],
-          not_acquired: [],
-          in_progress: [
-            "Peux évoquer des scénaristes et des acteurs fin de pouvoir construire un avis.",
-          ],
-          traces: [
-            {
-              name: "",
-              desc: [
-                "Le journal Hugo Décrypte fait aussi des formats vidéos mettant en avant des personnes connues tels que des acteurs à l’occasion du festival de Cannes.",
-                "Aller voir le programme du cinéma toutes les semaines pour voir les nouveautés et aller voir les plus intéressants/ les classiques/ les plus connus.",
-                "Regarder les films en DVD de ma famille, les films retranscrit en livres ou sous les conseils de proches.",
+                "Le journal Hugo Décrypte : Chaîne Youtube qui explique l’actualité politique de manière simple et pédagogique.",
+                "Les programmes officiels des partis politiques",
               ],
             },
           ],
@@ -580,6 +663,7 @@ function YearTwo({ theme }) {
       {abilities.map((ability, index) => (
         <div style={{ marginTop: "10px", marginBottom: "10px" }} key={index}>
           <button
+            className="btn-abilite"
             onClick={() => toggleExpand(index)}
             style={{
               fontSize: "25px",

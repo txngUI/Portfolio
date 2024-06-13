@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Button, Avatar } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function ProjectContainer({ theme, image, title, desc, icones = [], link }) {
+function ProjectContainer({ theme, image, title, desc, icones = [], link, year }) {
   return (
     <div
       className="project-container"
@@ -68,6 +68,7 @@ function ProjectContainer({ theme, image, title, desc, icones = [], link }) {
               alignItems: "center",
               paddingLeft: "20px",
               paddingRight: "20px",
+              marginTop: "15px",
               "&:hover": {
                 backgroundColor: theme === "light" ? "#EFE2E2" : "#0D0E11",
                 color: "#4F4F4F",
@@ -77,6 +78,11 @@ function ProjectContainer({ theme, image, title, desc, icones = [], link }) {
             Voir plus
           </Button>
         </div>
+      </div>
+      <div className="year" >
+        {year.split("").map((char, index) => (
+          <p key={index}>{char}</p>
+        ))}
       </div>
     </div>
   );

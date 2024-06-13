@@ -1,7 +1,12 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import {
+  Typography,
+  Grid,
+  Button,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Learning from "./Learning";
-import { Button } from "@mui/material";
 
 function Abilitie({ theme, abilitie, critical_learning, sources }) {
   return (
@@ -45,9 +50,16 @@ function Abilitie({ theme, abilitie, critical_learning, sources }) {
             }}
           >
             {sources.map((source, index) => (
-              <div key={index} style={{ marginBottom: "15px" }}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+              <div key={index} style={{ marginBottom: "25px" }}>
+                <div
+                  className="source"
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                  }}
+                >
                   <Typography
+                    className="source-title"
                     style={{
                       fontSize: "20px",
                       fontFamily: "Sometype Mono",
@@ -57,7 +69,6 @@ function Abilitie({ theme, abilitie, critical_learning, sources }) {
                           ? "rgba(0,0,0,0.5)"
                           : "rgba(255,255,255)",
                       marginRight: "10px",
-                      marginBottom: "25px",
                     }}
                   >
                     &gt; {source.title}
@@ -86,20 +97,22 @@ function Abilitie({ theme, abilitie, critical_learning, sources }) {
                     Voir la source
                   </Button>
                 </div>
-                <Typography
-                  style={{
-                    fontSize: "15px",
-                    fontFamily: "Sometype Mono",
-                    textAlign: "left",
-                    color:
-                      theme === "light"
-                        ? "rgba(0,0,0,0.5)"
-                        : "rgba(255,255,255)",
-                    marginLeft: "20px",
-                  }}
-                >
-                  &gt; {source.desc}
-                </Typography>
+                {source.desc && source.desc.trim() !== "" && (
+                  <Typography
+                    style={{
+                      fontSize: "15px",
+                      fontFamily: "Sometype Mono",
+                      textAlign: "left",
+                      color:
+                        theme === "light"
+                          ? "rgba(0,0,0,0.5)"
+                          : "rgba(255,255,255)",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    &gt; {source.desc}
+                  </Typography>
+                )}
               </div>
             ))}
           </div>
