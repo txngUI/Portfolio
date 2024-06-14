@@ -44,7 +44,7 @@ const Main = ({ theme, toggleTheme }) => {
             },
           }}
           component="a"
-          href="/cv.pdf" 
+          href="public\cv.pdf" 
           download="cv.pdf"
         >
           CV
