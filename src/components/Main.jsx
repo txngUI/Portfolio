@@ -44,7 +44,7 @@ const Main = ({ theme, toggleTheme }) => {
             },
           }}
           component="a"
-          href={`${process.env.PUBLIC_URL}/cv.pdf`}
+          href="/cv.pdf"
           download="cv.pdf"
         >
           CV
