@@ -16,8 +16,9 @@ function Skills({ theme }) {
         Skills
       </Typography>
       <div
+        className="skills-container"
         style={{
-          width: "100%",
+          width: "90%",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -25,24 +26,28 @@ function Skills({ theme }) {
         }}
       >
         <ChipContainer
+          className="chip-container"
           elements={["HTML", "CSS", "JavaScript", "React", "Symfony"]}
           theme={theme}
           style={{ width: "80%" }}
         />
 
         <ChipContainer
+          className="chip-container"
           elements={["Android Studio", "Intellij IDEA", "XML", "Figma", "PHP"]}
           theme={theme}
           style={{ width: "95%" }}
         />
 
         <ChipContainer
+          className="chip-container"
           elements={["VS Code", "Git", "Python", "Power BI", "SQL"]}
           theme={theme}
           style={{ width: "95%" }}
         />
 
         <ChipContainer
+          className="chip-container"
           elements={["PostgreSQL", "Excel", "NextJS", "Kotlin"]}
           theme={theme}
           style={{ width: "80%" }}

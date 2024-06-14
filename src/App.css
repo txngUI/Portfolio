@@ -290,6 +290,15 @@ td {
     flex-direction: row;
     font-family: "Sometype Mono";
   }
+
+  .chip-container {
+    width: auto;
+  }
+
+  .skills-container {
+    width: auto;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -399,5 +408,13 @@ td {
     display: flex;
     flex-direction: row;
     font-family: "Sometype Mono";
+  }
+
+  .skills-container {
+    width: auto;
+  }
+
+  .chip-container {
+    width: auto;
   }
 }
