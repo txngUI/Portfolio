@@ -80,7 +80,7 @@ function Profile({ theme }) {
             },
           }}
           component="a"
-          href="public\cv.pdf"
+          href="cv.pdf"
           download="cv.pdf"
         >
           Voir mon CV
@@ -103,7 +103,7 @@ function Profile({ theme }) {
             },
           }}
           component="a"
-          href="public\enquetes_metiers.pdf"
+          href="enquetes_metiers.pdf"
           download="enquetes_metiers.pdf"
         >
           Voir mes enquêtes métiers
@@ -126,7 +126,7 @@ function Profile({ theme }) {
             },
           }}
           component="a"
-          href="public\profil_pro.pdf"
+          href="profil_pro.pdf"
           download="profil_pro.pdf"
         >
           Mon profil professionnel Infographie
