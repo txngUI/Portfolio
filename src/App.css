@@ -200,6 +200,14 @@ td {
   justify-content: center;
 }
 
+.skills-container {
+  width: 90%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .about {
     width: 80%;
@@ -289,10 +297,6 @@ td {
     display: flex;
     flex-direction: row;
     font-family: "Sometype Mono";
-  }
-
-  .chip-container {
-    width: auto;
   }
 
   .skills-container {
@@ -410,10 +414,6 @@ td {
   }
 
   .skills-container {
-    width: auto;
-  }
-
-  .chip-container {
     width: auto;
   }
 }

@@ -1,9 +1,38 @@
 import React from "react";
-import { Typography, Chip } from "@mui/material";
-import ChipContainer from "../ui/ChipContainer";
-import { width } from "@fortawesome/free-solid-svg-icons/fa0";
+import { Typography } from "@mui/material";
+import WordCloud from "react-wordcloud";
 
 function Skills({ theme }) {
+  const words = [
+    { text: "HTML", value: 50 },
+    { text: "CSS", value: 50 },
+    { text: "JavaScript", value: 70 },
+    { text: "React", value: 70 },
+    { text: "Symphony", value: 50 },
+    { text: "Android Studio", value: 50 },
+    { text: "Intellij IDEA", value: 30 },
+    { text: "XML", value: 20 },
+    { text: "Figma", value: 60 },
+    { text: "PHP", value: 70 },
+    { text: "VS Code", value: 60 },
+    { text: "Git", value: 40 },
+    { text: "Python", value: 40 },
+    { text: "Power BI", value: 30 },
+    { text: "SQL", value: 60 },
+    { text: "PostgreSQL", value: 50 },
+    { text: "Next JS", value: 30 },
+    { text: "Java", value: 80 },
+    { text: "Kotlin", value: 50 },
+    { text: "Dart", value: 40 },
+    { text: "Swift", value: 30 },
+  ];
+
+  const options = {
+    rotations: 2,
+    rotationAngles: [-90, 0],
+    fontSizes: [10, 60],
+  };
+
   return (
     <div className="skills">
       <Typography
@@ -25,33 +54,7 @@ function Skills({ theme }) {
           paddingTop: "50px",
         }}
       >
-        <ChipContainer
-          className="chip-container"
-          elements={["HTML", "CSS", "JavaScript", "React", "Symfony"]}
-          theme={theme}
-          style={{ width: "80%" }}
-        />
-
-        <ChipContainer
-          className="chip-container"
-          elements={["Android Studio", "Intellij IDEA", "XML", "Figma", "PHP"]}
-          theme={theme}
-          style={{ width: "95%" }}
-        />
-
-        <ChipContainer
-          className="chip-container"
-          elements={["VS Code", "Git", "Python", "Power BI", "SQL"]}
-          theme={theme}
-          style={{ width: "95%" }}
-        />
-
-        <ChipContainer
-          className="chip-container"
-          elements={["PostgreSQL", "Excel", "NextJS", "Kotlin"]}
-          theme={theme}
-          style={{ width: "80%" }}
-        />
+          <WordCloud words={words} options={options}  />
       </div>
     </div>
   );
